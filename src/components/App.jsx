@@ -69,9 +69,6 @@ export class App extends Component {
 
   async componentDidMount() {
     window.addEventListener('keydown', this.handleKeyDown);
-    this.setState({ isLoading: true });
-    const response = await fetchImages('', 1);
-    this.setState({ images: response, isLoading: false });
   }
 
   render() {
